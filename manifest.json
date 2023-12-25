@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"version": "1.0",
+	"name": "Control Send for Discord",
+	"description": "Prevents messages from being sent using the enter key.",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://discord.com/*"
+			],
+			"js": [
+				"script.js"
+			]
+		}
+	],
+	"permissions": [
+		"activeTab"
+	]
+}
